@@ -10,7 +10,7 @@ class CarState(CarStateBase):
   def __init__(self, CP):
     super().__init__(CP)
     can_define = CANDefine(DBC[CP.carFingerprint]['pt'])
-    print(can_define.dv["SHIFTER_ASSM"]['SHIFTER_POSITION'])
+    print("SHIFTER_ASSM")
     print(can_define)
     print("HERE;HERE")
     self.shifter_values = can_define.dv["SHIFTER_ASSM"]['SHIFTER_POSITION']
