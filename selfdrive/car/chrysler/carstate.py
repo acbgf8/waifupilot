@@ -12,6 +12,7 @@ class CarState(CarStateBase):
     can_define = CANDefine(DBC[CP.carFingerprint]['pt'])
     print(can_define.dv["SHIFTER_ASSM"]['SHIFTER_POSITION'])
     print(can_define)
+    print("HERE;HERE")
     self.shifter_values = can_define.dv["SHIFTER_ASSM"]['SHIFTER_POSITION']
 
   def update(self, cp):
